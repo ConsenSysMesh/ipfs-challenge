@@ -22,7 +22,7 @@ The goal is to create a series of IPFS Merkle DAG nodes through loading each fil
 
 In other words, with an example, following the above steps:
 
-### Create the node & compute its multihash:
+### Create the node and compute its multihash:
 
 A message containing the string `Hello` should create the Merkle DAGNode multihash `QmPb9XxWLB7k1bKTn8nPLNmJsnbCuzwbkY1KP6n9a4BBNm`.
 
@@ -58,10 +58,9 @@ This is okay. It is only necessary to validate that the DAGNode *create* and IPF
 
 ## Helpful Links
 
-* https://github.com/ipfs/js-ipfs (The JavaScript implementation of IPFS)
-* https://github.com/ipfs/js-ipfs/tree/master/examples (Helpful examples of using js-ipfs in practice)
-* https://github.com/ipld/js-ipld-dag-pb (The DAGNode js-ipfs library for creating DAGNode objects)
-
+* [The JavaScript implementation of IPFS](https://github.com/ipfs/js-ipfs)
+* [Helpful examples of using js-ipfs in practice](https://github.com/ipfs/js-ipfs/tree/master/examples)
+* [The DAGNode js-ipfs library for creating DAGNode objects](https://github.com/ipld/js-ipld-dag-pb)
 
 ## Additional Notes:
 
@@ -85,4 +84,4 @@ What we will look at:
 - The design and implementation, how easy it is to understand and maintain your code.
 - How was the software verified, if by automated tests or some other way.
 
-**Thank you!**
+### **Thank you!**
