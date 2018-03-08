@@ -11,7 +11,7 @@ Data stored in IPFS and named links gives the collection of IPFS objects the str
 
 The challenge proposed here is to build a system which acts as an event listener built upon [js-ipfs](https://github.com/ipfs/js-ipfs), reading data blobs and forwarding them to an IPFS node while hashing and validating the associated multihashes and data.
 
-In this system, messages will be received as a stream of files from a directory for simplicity's sake, but please do not assume that your code would only handle a finite sequence of events. In other words, we expect your program to handle an arbitrarily large events stream. You would not be able to keep all events in memory or any other storage.
+In this system, messages will be received as a stream of files from a directory for simplicity's sake, but please do not assume that your code would only handle a finite sequence of events. In other words, we expect your program to handle an arbitrarily large events stream. You would not be able to keep all events in memory or any other storage. These text files can be found within the appropriately named files directory. Additionally, there is a bash script within the repository that can be used to generate new files using the command `sh generate_files.sh`. This can be useful for testing against a variety of randomized input text.
 
 The goal is to create a series of IPFS Merkle DAG nodes through loading each file and sending them to a pipeline that will:
 
