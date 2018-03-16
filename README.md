@@ -39,12 +39,12 @@ Finally the result of retrieving the content using the multihash should be compa
 ---
 ### Output:
 
-If all messages are received and validated without errors, The event listener should print to STDOUT that all messages have been received and validated along with a new line delineated (`\n`) list with the input string followed by a colon, space and multihash such as:
+The validated messages should be printed to STDOUT as they are processed with a new line delineated (`\n`) list with the input string followed by a colon, space and multihash and if all messages are received and validated without errors, the event listener should print that all messages have been received and validated. The final output might look like:
 
 ```
-ALL MESSAGES RECEIVED
 Hello: QmZbj5ruYneZb8FuR9wnLqJCpCXMQudhSdWhdhp5U1oPWJ
 World: QmQnEkXRJJ5AhLp1vWrqiQ7GbSX1iGTsfKEmuQFJGBbc58f
+ALL MESSAGES RECEIVED
 ```
 
 Please be advised that the IPFS add method wraps input data with some internal metadata: so multihashes from the Merkle DAGNode create and IPFS node put methods will differ from the output from the corresponding *add* method.
