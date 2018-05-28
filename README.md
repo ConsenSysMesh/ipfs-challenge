@@ -9,7 +9,7 @@ Data stored in IPFS and named links gives the collection of IPFS objects the str
 
 ## The Challenge
 
-The challenge proposed here is to build a system which acts as an event listener built upon [js-ipfs](https://github.com/ipfs/js-ipfs), reading data blobs and forwarding them to an IPFS node while hashing and validating the associated multihashes and data.
+The challenge proposed here is to build a system which acts as an event listener, reading data blobs and forwarding them to an IPFS node while hashing and validating the associated multihashes and data.
 
 In this system, messages will be received as a stream of files from a directory for simplicity's sake, but please do not assume that your code would only handle a finite sequence of events. In other words, we expect your program to handle an arbitrarily large events stream. You would not be able to keep all events in memory or any other storage. These text files can be found within the appropriately named files directory. Additionally, there is a bash script within the repository that can be used to generate new files using the command `sh generate_files.sh`. This can be useful for testing against a variety of randomized input text.
 
@@ -58,7 +58,7 @@ This is okay. It is only necessary to validate that the DAGNode *create* and IPF
 
 ## Helpful Links
 
-* [The JavaScript implementation of IPFS](https://github.com/ipfs/js-ipfs)
+* [IPFS implementations & API client libraries](https://github.com/ipfs/ipfs#protocol-implementations)
 * [Helpful examples of using js-ipfs in practice](https://github.com/ipfs/js-ipfs/tree/master/examples)
 * [The DAGNode js-ipfs library for creating DAGNode objects](https://github.com/ipld/js-ipld-dag-pb)
 
@@ -72,7 +72,7 @@ Please write automated tests and include them with your submission and finally, 
 
 ## Deliverables:
 
-Please bundle your code into a zip file and email it to your respective interviewer, along with any additional notes you might have.
+Please email your code to your respective interviewer, along with any additional notes you might have.
 
 ## Assessment Criteria
 We expect you to write code you would consider production-ready.
